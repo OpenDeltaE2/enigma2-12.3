@@ -124,7 +124,7 @@ class OverscanWizard(ConfigListScreen, Screen):
 			self.yes_no.value = True
 			self.list.append((_("Do you want to quit the overscan wizard?"), self.yes_no))
 		elif self.step == 6:
-			config.skin.primary_skin.value = "delta-purple-fhd/skin.xml"
+			config.skin.primary_skin.value = "delta-blackred-fhd/skin.xml"
 			config.save()
 			self["introduction"].setText(_("The user interface of the receiver will now restart to select the selected skin"))
 			quitMainloop(3)
